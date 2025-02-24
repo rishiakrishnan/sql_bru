@@ -1,0 +1,1091 @@
+2025-02-22 16:25:57,420 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:25:57,420 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:26:06,208 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:26:06,208 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:26:27,732 - 127.0.0.1 - - [22/Feb/2025 16:26:27] "GET / HTTP/1.1" 200 -
+2025-02-22 16:26:29,403 - 127.0.0.1 - - [22/Feb/2025 16:26:29] "GET / HTTP/1.1" 200 -
+2025-02-22 16:27:10,999 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:27:10,999 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:27:12,847 - 127.0.0.1 - - [22/Feb/2025 16:27:12] "GET / HTTP/1.1" 200 -
+2025-02-22 16:28:12,596 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:28:12,596 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:28:16,855 - 127.0.0.1 - - [22/Feb/2025 16:28:16] "GET / HTTP/1.1" 200 -
+2025-02-22 16:28:17,888 - 127.0.0.1 - - [22/Feb/2025 16:28:17] "GET / HTTP/1.1" 200 -
+2025-02-22 16:28:25,891 - Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 91, in upload_file
+    cursor.execute("INSERT INTO files (filename, content, status) VALUES (?, ?, ?)", (file.filename, "Uploaded", status))
+sqlite3.OperationalError: table files has no column named status
+2025-02-22 16:28:25,893 - 127.0.0.1 - - [22/Feb/2025 16:28:25] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-22 16:30:11,975 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:30:11,975 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:30:15,760 - 127.0.0.1 - - [22/Feb/2025 16:30:15] "GET / HTTP/1.1" 200 -
+2025-02-22 16:30:16,902 - 127.0.0.1 - - [22/Feb/2025 16:30:16] "GET / HTTP/1.1" 200 -
+2025-02-22 16:30:17,080 - 127.0.0.1 - - [22/Feb/2025 16:30:17] "GET / HTTP/1.1" 200 -
+2025-02-22 16:30:17,824 - 127.0.0.1 - - [22/Feb/2025 16:30:17] "GET / HTTP/1.1" 200 -
+2025-02-22 16:30:18,005 - 127.0.0.1 - - [22/Feb/2025 16:30:18] "GET / HTTP/1.1" 200 -
+2025-02-22 16:30:42,695 - Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 99, in upload_file
+    cursor.execute("INSERT INTO files (filename, content, status) VALUES (?, ?, ?)", (file.filename, "Uploaded", status))
+sqlite3.OperationalError: table files has no column named status
+2025-02-22 16:30:42,697 - 127.0.0.1 - - [22/Feb/2025 16:30:42] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-22 16:30:57,532 - 127.0.0.1 - - [22/Feb/2025 16:30:57] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:30:57,537 - 127.0.0.1 - - [22/Feb/2025 16:30:57] "GET / HTTP/1.1" 200 -
+2025-02-22 16:32:43,838 - 127.0.0.1 - - [22/Feb/2025 16:32:43] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-02-22 16:32:48,880 - 127.0.0.1 - - [22/Feb/2025 16:32:48] "GET / HTTP/1.1" 200 -
+2025-02-22 16:32:50,688 - 127.0.0.1 - - [22/Feb/2025 16:32:50] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-02-22 16:32:53,090 - 127.0.0.1 - - [22/Feb/2025 16:32:53] "GET / HTTP/1.1" 200 -
+2025-02-22 16:36:46,403 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:36:46,422 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:36:46,423 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:36:46,424 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:36:46,424 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:36:51,331 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:36:51,334 - 127.0.0.1 - - [22/Feb/2025 16:36:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:37:06,444 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:37:06,445 - 127.0.0.1 - - [22/Feb/2025 16:37:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:37:06,609 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:37:06,611 - 127.0.0.1 - - [22/Feb/2025 16:37:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:37:06,781 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:37:06,782 - 127.0.0.1 - - [22/Feb/2025 16:37:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:37:13,994 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:37:13,995 - 127.0.0.1 - - [22/Feb/2025 16:37:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:37:14,174 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:37:14,176 - 127.0.0.1 - - [22/Feb/2025 16:37:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:37:14,354 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:37:14,355 - 127.0.0.1 - - [22/Feb/2025 16:37:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:37:24,792 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:37:24,811 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:37:24,811 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:37:24,813 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:37:24,813 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:37:31,657 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 72, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:37:31,660 - 127.0.0.1 - - [22/Feb/2025 16:37:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:38:51,381 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:38:51,401 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:38:51,401 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:38:51,403 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:38:51,403 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:38:55,043 - 127.0.0.1 - - [22/Feb/2025 16:38:55] "GET / HTTP/1.1" 200 -
+2025-02-22 16:39:02,413 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:39:02,413 - Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 99, in upload_file
+    cursor.execute("INSERT INTO files (filename, status) VALUES (?, ?)", (file.filename, "Safe"))
+sqlite3.OperationalError: table files has no column named status
+2025-02-22 16:39:02,414 - 127.0.0.1 - - [22/Feb/2025 16:39:02] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-22 16:39:31,596 - Malicious pattern detected in uploads/app.py
+2025-02-22 16:39:31,597 - 127.0.0.1 - - [22/Feb/2025 16:39:31] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:39:31,601 - 127.0.0.1 - - [22/Feb/2025 16:39:31] "GET / HTTP/1.1" 200 -
+2025-02-22 16:40:01,724 - 127.0.0.1 - - [22/Feb/2025 16:40:01] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:40:01,729 - 127.0.0.1 - - [22/Feb/2025 16:40:01] "GET / HTTP/1.1" 200 -
+2025-02-22 16:41:04,259 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:41:04,280 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:41:04,280 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:41:23,482 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:41:23,502 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:41:23,502 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:41:23,504 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:41:23,504 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:41:29,781 - 127.0.0.1 - - [22/Feb/2025 16:41:29] "GET / HTTP/1.1" 200 -
+2025-02-22 16:41:40,260 - 127.0.0.1 - - [22/Feb/2025 16:41:40] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:41:40,265 - 127.0.0.1 - - [22/Feb/2025 16:41:40] "GET / HTTP/1.1" 200 -
+2025-02-22 16:41:53,808 - Error scanning uploads/6.js: missing ), unterminated subpattern at position 17
+2025-02-22 16:41:53,809 - Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 99, in upload_file
+    cursor.execute("INSERT INTO files (filename, status) VALUES (?, ?)", (file.filename, "Safe"))
+sqlite3.OperationalError: table files has no column named status
+2025-02-22 16:41:53,811 - 127.0.0.1 - - [22/Feb/2025 16:41:53] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-22 16:41:55,567 - 127.0.0.1 - - [22/Feb/2025 16:41:55] "GET / HTTP/1.1" 200 -
+2025-02-22 16:42:05,253 - 127.0.0.1 - - [22/Feb/2025 16:42:05] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:42:05,257 - 127.0.0.1 - - [22/Feb/2025 16:42:05] "GET / HTTP/1.1" 200 -
+2025-02-22 16:45:04,327 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:04,347 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:04,347 - Error scanning uploads/6.js: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:04,347 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:04,349 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:45:04,349 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:45:07,235 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 75, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:45:07,237 - 127.0.0.1 - - [22/Feb/2025 16:45:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:45:08,491 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 75, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:45:08,492 - 127.0.0.1 - - [22/Feb/2025 16:45:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:45:16,309 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:16,329 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:16,329 - Error scanning uploads/6.js: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:16,329 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:16,331 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:45:16,331 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:45:18,133 - 127.0.0.1 - - [22/Feb/2025 16:45:18] "GET / HTTP/1.1" 200 -
+2025-02-22 16:45:39,601 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:39,621 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:39,621 - Error scanning uploads/6.js: missing ), unterminated subpattern at position 17
+2025-02-22 16:45:39,621 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:46:19,165 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 16:46:19,185 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 16:46:19,186 - Error scanning uploads/6.js: missing ), unterminated subpattern at position 17
+2025-02-22 16:46:19,186 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 16:46:19,188 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:46:19,188 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:47:16,180 - Malicious pattern detected in uploads/6.js
+2025-02-22 16:47:16,180 - Moved 6.js to trash due to suspicious content.
+2025-02-22 16:47:16,182 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:47:16,182 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:47:20,231 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 76, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:47:20,234 - 127.0.0.1 - - [22/Feb/2025 16:47:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:48:06,922 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:48:06,922 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:48:09,681 - 127.0.0.1 - - [22/Feb/2025 16:48:09] "GET / HTTP/1.1" 200 -
+2025-02-22 16:48:15,188 - Malicious pattern detected in uploads/4.php
+2025-02-22 16:48:15,189 - 127.0.0.1 - - [22/Feb/2025 16:48:15] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:48:15,194 - 127.0.0.1 - - [22/Feb/2025 16:48:15] "GET / HTTP/1.1" 200 -
+2025-02-22 16:48:22,061 - Malicious pattern detected in uploads/app.py
+2025-02-22 16:48:22,062 - 127.0.0.1 - - [22/Feb/2025 16:48:22] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:48:22,067 - 127.0.0.1 - - [22/Feb/2025 16:48:22] "GET / HTTP/1.1" 200 -
+2025-02-22 16:48:28,490 - Malicious pattern detected in uploads/6.js
+2025-02-22 16:48:28,491 - 127.0.0.1 - - [22/Feb/2025 16:48:28] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:48:28,496 - 127.0.0.1 - - [22/Feb/2025 16:48:28] "GET / HTTP/1.1" 200 -
+2025-02-22 16:49:21,239 - Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 103, in upload_file
+    cursor.execute("INSERT INTO files (filename, status) VALUES (?, ?)", (file.filename, "Safe"))
+sqlite3.OperationalError: table files has no column named status
+2025-02-22 16:49:21,241 - 127.0.0.1 - - [22/Feb/2025 16:49:21] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-22 16:49:22,922 - 127.0.0.1 - - [22/Feb/2025 16:49:22] "GET / HTTP/1.1" 200 -
+2025-02-22 16:49:28,417 - Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 103, in upload_file
+    cursor.execute("INSERT INTO files (filename, status) VALUES (?, ?)", (file.filename, "Safe"))
+sqlite3.OperationalError: table files has no column named status
+2025-02-22 16:49:28,418 - 127.0.0.1 - - [22/Feb/2025 16:49:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-02-22 16:49:29,781 - 127.0.0.1 - - [22/Feb/2025 16:49:29] "GET / HTTP/1.1" 200 -
+2025-02-22 16:51:01,321 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:51:01,321 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:51:05,865 - 127.0.0.1 - - [22/Feb/2025 16:51:05] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:51:05,877 - 127.0.0.1 - - [22/Feb/2025 16:51:05] "GET / HTTP/1.1" 200 -
+2025-02-22 16:51:10,861 - 127.0.0.1 - - [22/Feb/2025 16:51:10] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:51:10,865 - 127.0.0.1 - - [22/Feb/2025 16:51:10] "GET / HTTP/1.1" 200 -
+2025-02-22 16:51:41,774 - Malicious pattern detected in uploads/1.sql
+2025-02-22 16:51:41,775 - 127.0.0.1 - - [22/Feb/2025 16:51:41] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:51:41,780 - 127.0.0.1 - - [22/Feb/2025 16:51:41] "GET / HTTP/1.1" 200 -
+2025-02-22 16:52:56,583 - 127.0.0.1 - - [22/Feb/2025 16:52:56] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:52:56,588 - 127.0.0.1 - - [22/Feb/2025 16:52:56] "GET / HTTP/1.1" 200 -
+2025-02-22 16:55:11,288 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:55:11,289 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:55:16,911 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 76, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:55:16,914 - 127.0.0.1 - - [22/Feb/2025 16:55:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:55:18,295 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 76, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:55:18,296 - 127.0.0.1 - - [22/Feb/2025 16:55:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:55:18,475 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 76, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 31, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 16:55:18,476 - 127.0.0.1 - - [22/Feb/2025 16:55:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 16:55:39,396 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 16:55:39,396 - [33mPress CTRL+C to quit[0m
+2025-02-22 16:55:42,265 - 127.0.0.1 - - [22/Feb/2025 16:55:42] "GET / HTTP/1.1" 200 -
+2025-02-22 16:55:53,900 - Malicious pattern detected in uploads/1.sql
+2025-02-22 16:55:53,902 - 127.0.0.1 - - [22/Feb/2025 16:55:53] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:55:53,906 - 127.0.0.1 - - [22/Feb/2025 16:55:53] "GET / HTTP/1.1" 200 -
+2025-02-22 16:56:02,216 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 16:56:02,216 - Moved 3.py to trash due to suspicious content.
+2025-02-22 16:56:02,216 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 16:56:02,216 - Moved 4.php to trash due to suspicious content.
+2025-02-22 16:56:02,216 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 16:56:02,217 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 16:56:02,217 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 16:56:02,217 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 16:56:02,217 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 16:56:02,217 - Moved 6.js to trash due to suspicious content.
+2025-02-22 16:56:02,217 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 16:56:02,217 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 16:56:02,220 - 127.0.0.1 - - [22/Feb/2025 16:56:02] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:56:02,225 - 127.0.0.1 - - [22/Feb/2025 16:56:02] "GET / HTTP/1.1" 200 -
+2025-02-22 16:56:14,325 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 16:56:14,325 - Moved 3.py to trash due to suspicious content.
+2025-02-22 16:56:14,325 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 16:56:14,325 - Moved 4.php to trash due to suspicious content.
+2025-02-22 16:56:14,325 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 16:56:14,325 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 16:56:14,326 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 16:56:14,326 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 16:56:14,326 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 16:56:14,326 - Moved 6.js to trash due to suspicious content.
+2025-02-22 16:56:14,326 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 16:56:14,326 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 16:56:14,328 - 127.0.0.1 - - [22/Feb/2025 16:56:14] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 16:56:14,332 - 127.0.0.1 - - [22/Feb/2025 16:56:14] "GET / HTTP/1.1" 200 -
+2025-02-22 17:01:18,622 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:01:18,622 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:01:21,480 - 127.0.0.1 - - [22/Feb/2025 17:01:21] "GET / HTTP/1.1" 200 -
+2025-02-22 17:01:36,407 - Malicious pattern detected in uploads/test/3.py
+2025-02-22 17:01:36,408 - 127.0.0.1 - - [22/Feb/2025 17:01:36] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:01:36,412 - 127.0.0.1 - - [22/Feb/2025 17:01:36] "GET / HTTP/1.1" 200 -
+2025-02-22 17:03:48,601 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:03:48,601 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:03:52,225 - 127.0.0.1 - - [22/Feb/2025 17:03:52] "GET / HTTP/1.1" 200 -
+2025-02-22 17:03:58,094 - Malicious pattern detected in uploads/app.py
+2025-02-22 17:03:58,095 - 127.0.0.1 - - [22/Feb/2025 17:03:58] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:03:58,100 - 127.0.0.1 - - [22/Feb/2025 17:03:58] "GET / HTTP/1.1" 200 -
+2025-02-22 17:04:10,845 - 127.0.0.1 - - [22/Feb/2025 17:04:10] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:04:10,850 - 127.0.0.1 - - [22/Feb/2025 17:04:10] "GET / HTTP/1.1" 200 -
+2025-02-22 17:04:20,147 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:04:20,147 - Moved 3.py to trash due to suspicious content.
+2025-02-22 17:04:20,147 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:04:20,148 - Moved 4.php to trash due to suspicious content.
+2025-02-22 17:04:20,148 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:04:20,148 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:04:20,148 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:04:20,148 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 17:04:20,148 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:04:20,148 - Moved 6.js to trash due to suspicious content.
+2025-02-22 17:04:20,148 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:04:20,148 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 17:04:20,151 - 127.0.0.1 - - [22/Feb/2025 17:04:20] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:04:20,155 - 127.0.0.1 - - [22/Feb/2025 17:04:20] "GET / HTTP/1.1" 200 -
+2025-02-22 17:04:28,060 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:04:28,060 - Moved 3.py to trash due to suspicious content.
+2025-02-22 17:04:28,061 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:04:28,061 - Moved 4.php to trash due to suspicious content.
+2025-02-22 17:04:28,061 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:04:28,061 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:04:28,061 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:04:28,061 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 17:04:28,061 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:04:28,061 - Moved 6.js to trash due to suspicious content.
+2025-02-22 17:04:28,061 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:04:28,061 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 17:04:28,064 - 127.0.0.1 - - [22/Feb/2025 17:04:28] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:04:28,068 - 127.0.0.1 - - [22/Feb/2025 17:04:28] "GET / HTTP/1.1" 200 -
+2025-02-22 17:04:40,685 - 127.0.0.1 - - [22/Feb/2025 17:04:40] "[32mPOST /upload-folder HTTP/1.1[0m" 302 -
+2025-02-22 17:04:40,689 - 127.0.0.1 - - [22/Feb/2025 17:04:40] "[31m[1mGET /upload-folder HTTP/1.1[0m" 405 -
+2025-02-22 17:13:45,349 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 17:13:45,368 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 17:13:45,369 - Error scanning uploads/w.js: missing ), unterminated subpattern at position 17
+2025-02-22 17:13:45,369 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 17:13:45,369 - Error scanning uploads/a.py: missing ), unterminated subpattern at position 17
+2025-02-22 17:13:45,371 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:13:45,371 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:13:48,537 - 127.0.0.1 - - [22/Feb/2025 17:13:48] "[33mGET /upload-folder HTTP/1.1[0m" 404 -
+2025-02-22 17:13:49,549 - 127.0.0.1 - - [22/Feb/2025 17:13:49] "[33mGET /upload-folder HTTP/1.1[0m" 404 -
+2025-02-22 17:13:53,922 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 73, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 27, in top-level template code
+    <form action="{{ url_for('upload_folder') }}" method="post" enctype="multipart/form-data">
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'upload_folder'. Did you mean 'upload_file' instead?
+2025-02-22 17:13:53,924 - 127.0.0.1 - - [22/Feb/2025 17:13:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 17:13:54,695 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 73, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 27, in top-level template code
+    <form action="{{ url_for('upload_folder') }}" method="post" enctype="multipart/form-data">
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'upload_folder'. Did you mean 'upload_file' instead?
+2025-02-22 17:13:54,696 - 127.0.0.1 - - [22/Feb/2025 17:13:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 17:13:54,874 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 73, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 27, in top-level template code
+    <form action="{{ url_for('upload_folder') }}" method="post" enctype="multipart/form-data">
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'upload_folder'. Did you mean 'upload_file' instead?
+2025-02-22 17:13:54,875 - 127.0.0.1 - - [22/Feb/2025 17:13:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 17:14:14,365 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 73, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 27, in top-level template code
+    <form action="{{ url_for('upload_folder') }}" method="post" enctype="multipart/form-data">
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'upload_folder'. Did you mean 'upload_file' instead?
+2025-02-22 17:14:14,366 - 127.0.0.1 - - [22/Feb/2025 17:14:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 17:14:38,242 - Error scanning uploads/5-A.R: missing ), unterminated subpattern at position 17
+2025-02-22 17:14:38,262 - Error scanning uploads/C-Class-shaktiweek2019.pdf: missing ), unterminated subpattern at position 17
+2025-02-22 17:14:38,262 - Error scanning uploads/w.js: missing ), unterminated subpattern at position 17
+2025-02-22 17:14:38,262 - Error scanning uploads/mixed_cluster.bsv: missing ), unterminated subpattern at position 17
+2025-02-22 17:14:38,262 - Error scanning uploads/a.py: missing ), unterminated subpattern at position 17
+2025-02-22 17:14:38,264 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:14:38,264 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:14:41,406 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 73, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 27, in top-level template code
+    <form action="{{ url_for('upload_folder') }}" method="post" enctype="multipart/form-data">
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'upload_folder'. Did you mean 'upload_file' instead?
+2025-02-22 17:14:41,408 - 127.0.0.1 - - [22/Feb/2025 17:14:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 17:15:23,311 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:15:23,311 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:16:35,157 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:16:35,157 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:16:44,846 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 76, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 40, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 17:16:44,848 - 127.0.0.1 - - [22/Feb/2025 17:16:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 17:16:45,579 - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 76, in index
+    return render_template('index.html', files=files)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shakti/Desktop/flask_file_upload/templates/index.html", line 40, in top-level template code
+    <a href="{{ url_for('delete_file', file_id=file[0]) }}">Delete</a>
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete_file' with values ['file_id']. Did you mean 'upload_file' instead?
+2025-02-22 17:16:45,580 - 127.0.0.1 - - [22/Feb/2025 17:16:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-22 17:17:40,173 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:17:40,173 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:17:43,854 - 127.0.0.1 - - [22/Feb/2025 17:17:43] "GET / HTTP/1.1" 200 -
+2025-02-22 17:17:50,799 - Malicious pattern detected in uploads/1.sql
+2025-02-22 17:17:50,800 - 127.0.0.1 - - [22/Feb/2025 17:17:50] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:17:50,804 - 127.0.0.1 - - [22/Feb/2025 17:17:50] "GET / HTTP/1.1" 200 -
+2025-02-22 17:17:56,791 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:17:56,791 - Moved 3.py to trash due to suspicious content.
+2025-02-22 17:17:56,791 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:17:56,791 - Moved 4.php to trash due to suspicious content.
+2025-02-22 17:17:56,792 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:17:56,792 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:17:56,792 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:17:56,792 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 17:17:56,792 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:17:56,792 - Moved 6.js to trash due to suspicious content.
+2025-02-22 17:17:56,792 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:17:56,792 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 17:17:56,795 - 127.0.0.1 - - [22/Feb/2025 17:17:56] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:17:56,800 - 127.0.0.1 - - [22/Feb/2025 17:17:56] "GET / HTTP/1.1" 200 -
+2025-02-22 17:18:20,841 - Exception on /upload-folder [POST]
+Traceback (most recent call last):
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 133, in upload_folder
+    file.save(filepath)
+  File "/home/shakti/.pyenv/versions/3.8.10/envs/py38/lib/python3.8/site-packages/werkzeug/datastructures/file_storage.py", line 125, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/verilog/verilog/module_fn_base_alu.use'
+2025-02-22 17:18:20,843 - 127.0.0.1 - - [22/Feb/2025 17:18:20] "[35m[1mPOST /upload-folder HTTP/1.1[0m" 500 -
+2025-02-22 17:18:34,019 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:18:34,019 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:18:34,020 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:18:34,020 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:18:34,021 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:18:34,021 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:18:34,022 - 127.0.0.1 - - [22/Feb/2025 17:18:34] "[32mPOST /upload-folder HTTP/1.1[0m" 302 -
+2025-02-22 17:18:34,026 - 127.0.0.1 - - [22/Feb/2025 17:18:34] "GET / HTTP/1.1" 200 -
+2025-02-22 17:19:35,531 - Malicious pattern detected in uploads/1/1.sql
+2025-02-22 17:19:35,531 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:19:35,535 - 127.0.0.1 - - [22/Feb/2025 17:19:35] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:19:35,541 - 127.0.0.1 - - [22/Feb/2025 17:19:35] "GET / HTTP/1.1" 200 -
+2025-02-22 17:20:24,337 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:20:24,338 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:20:30,813 - 127.0.0.1 - - [22/Feb/2025 17:20:30] "GET / HTTP/1.1" 200 -
+2025-02-22 17:20:31,581 - 127.0.0.1 - - [22/Feb/2025 17:20:31] "GET / HTTP/1.1" 200 -
+2025-02-22 17:20:32,308 - 127.0.0.1 - - [22/Feb/2025 17:20:32] "GET / HTTP/1.1" 200 -
+2025-02-22 17:20:32,489 - 127.0.0.1 - - [22/Feb/2025 17:20:32] "GET / HTTP/1.1" 200 -
+2025-02-22 17:20:37,788 - Malicious pattern detected in uploads/1/1.sql
+2025-02-22 17:20:37,789 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:20:37,793 - 127.0.0.1 - - [22/Feb/2025 17:20:37] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:20:37,798 - 127.0.0.1 - - [22/Feb/2025 17:20:37] "GET / HTTP/1.1" 200 -
+2025-02-22 17:21:10,673 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:21:10,673 - Moved 3.py to trash due to suspicious content.
+2025-02-22 17:21:10,674 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:21:10,674 - Moved 4.php to trash due to suspicious content.
+2025-02-22 17:21:10,674 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:21:10,675 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:21:10,675 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:21:10,675 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 17:21:10,675 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:21:10,675 - Moved 6.js to trash due to suspicious content.
+2025-02-22 17:21:10,676 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:21:10,676 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 17:21:10,679 - 127.0.0.1 - - [22/Feb/2025 17:21:10] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:21:10,684 - 127.0.0.1 - - [22/Feb/2025 17:21:10] "GET / HTTP/1.1" 200 -
+2025-02-22 17:25:02,166 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:25:02,166 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:25:06,230 - 127.0.0.1 - - [22/Feb/2025 17:25:06] "GET / HTTP/1.1" 200 -
+2025-02-22 17:52:10,782 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:52:10,782 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:52:15,889 - 127.0.0.1 - - [22/Feb/2025 17:52:15] "GET / HTTP/1.1" 200 -
+2025-02-22 17:52:22,042 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:52:22,042 - Moved 3.py to trash due to suspicious content.
+2025-02-22 17:52:22,042 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:52:22,043 - Moved 4.php to trash due to suspicious content.
+2025-02-22 17:52:22,043 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:52:22,043 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:52:22,043 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:52:22,043 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 17:52:22,043 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:52:22,043 - Moved 6.js to trash due to suspicious content.
+2025-02-22 17:52:22,043 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:52:22,043 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 17:52:22,047 - 127.0.0.1 - - [22/Feb/2025 17:52:22] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:52:22,052 - 127.0.0.1 - - [22/Feb/2025 17:52:22] "GET / HTTP/1.1" 200 -
+2025-02-22 17:52:29,491 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:52:29,492 - Moved 3.py to trash due to suspicious content.
+2025-02-22 17:52:29,492 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:52:29,492 - Moved 4.php to trash due to suspicious content.
+2025-02-22 17:52:29,492 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:52:29,492 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:52:29,492 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:52:29,492 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 17:52:29,492 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:52:29,492 - Moved 6.js to trash due to suspicious content.
+2025-02-22 17:52:29,493 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:52:29,493 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 17:52:29,495 - 127.0.0.1 - - [22/Feb/2025 17:52:29] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:52:29,499 - 127.0.0.1 - - [22/Feb/2025 17:52:29] "GET / HTTP/1.1" 200 -
+2025-02-22 17:52:47,516 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:52:47,517 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:52:47,517 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:52:47,517 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:52:47,517 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:52:47,517 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:52:47,519 - 127.0.0.1 - - [22/Feb/2025 17:52:47] "[32mPOST /upload-folder HTTP/1.1[0m" 302 -
+2025-02-22 17:52:47,524 - 127.0.0.1 - - [22/Feb/2025 17:52:47] "GET / HTTP/1.1" 200 -
+2025-02-22 17:53:12,705 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 17:53:12,705 - [33mPress CTRL+C to quit[0m
+2025-02-22 17:53:15,414 - 127.0.0.1 - - [22/Feb/2025 17:53:15] "GET / HTTP/1.1" 200 -
+2025-02-22 17:53:21,074 - Malicious pattern detected in uploads/app.py
+2025-02-22 17:53:21,075 - 127.0.0.1 - - [22/Feb/2025 17:53:21] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:53:21,080 - 127.0.0.1 - - [22/Feb/2025 17:53:21] "GET / HTTP/1.1" 200 -
+2025-02-22 17:53:26,054 - Malicious pattern detected in uploads/test/test/3.py
+2025-02-22 17:53:26,054 - Moved 3.py to trash due to suspicious content.
+2025-02-22 17:53:26,054 - Malicious pattern detected in uploads/test/test/4.php
+2025-02-22 17:53:26,054 - Moved 4.php to trash due to suspicious content.
+2025-02-22 17:53:26,054 - Malicious pattern detected in uploads/test/test/1.sql
+2025-02-22 17:53:26,054 - Moved 1.sql to trash due to suspicious content.
+2025-02-22 17:53:26,055 - Malicious pattern detected in uploads/test/test/2.xss
+2025-02-22 17:53:26,055 - Moved 2.xss to trash due to suspicious content.
+2025-02-22 17:53:26,055 - Malicious pattern detected in uploads/test/test/6.js
+2025-02-22 17:53:26,055 - Moved 6.js to trash due to suspicious content.
+2025-02-22 17:53:26,056 - Malicious pattern detected in uploads/test/test/5.txt
+2025-02-22 17:53:26,056 - Moved 5.txt to trash due to suspicious content.
+2025-02-22 17:53:26,059 - 127.0.0.1 - - [22/Feb/2025 17:53:26] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-22 17:53:26,064 - 127.0.0.1 - - [22/Feb/2025 17:53:26] "GET / HTTP/1.1" 200 -

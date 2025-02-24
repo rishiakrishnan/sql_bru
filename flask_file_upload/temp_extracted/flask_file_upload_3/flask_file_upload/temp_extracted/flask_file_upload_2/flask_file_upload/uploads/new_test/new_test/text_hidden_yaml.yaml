@@ -1,0 +1,6 @@
+# Sample YAML file
+users:
+  - username: admin
+    password: secret
+  - username: attacker
+    payload: "exec('malicious_code_here')"  # Hidden malicious code

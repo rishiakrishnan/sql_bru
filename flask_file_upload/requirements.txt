@@ -1,0 +1,11 @@
+Flask
+python-docx
+python-pptx
+openpyxl
+cloudmersive-virus-api-client
+opencv-python
+numpy
+
+#pip install -r requirements.txt
+
+#sudo apt install python3-pip python3-venv -y
