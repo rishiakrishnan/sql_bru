@@ -1,2 +1,0 @@
-hello bro
-this script is for hacking sql attack and brute force attacks.
