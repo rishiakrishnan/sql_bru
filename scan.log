@@ -32437,3 +32437,70 @@ Department of CSE
 Je
 2025-02-24 10:16:52,264 - 127.0.0.1 - - [24/Feb/2025 10:16:52] "[32mPOST /upload HTTP/1.1[0m" 302 -
 2025-02-24 10:16:52,266 - 127.0.0.1 - - [24/Feb/2025 10:16:52] "GET / HTTP/1.1" 200 -
+2025-03-12 20:00:13,755 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-12 20:00:13,755 - [33mPress CTRL+C to quit[0m
+2025-03-12 20:00:46,989 - Extracted content from uploads/B_6_R_2.pptx: JCS1832 PROJECT WORK PHASE - IIPERCEIVING AND PREVENTING ATTACKS IN CLOUD ENVIRONMENTVIVA VOCEDate: 24-02-2025 BATCH NO: 06
+PRESENTED BY
+PRIYA DHARSHINI A(130721104061)
+RAJESHWARI B(130721104067)
+SADHANA N(130721104072)
+SUPERVISED  BY 
+Mrs. P. MAHALAKSHMI
+ASSISTANT PROFESSOR(CSE)
+JERUSALEM COLLEGE OF ENGINEERING, CHENNAI-100
+
+         DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+<number>
+Department of CSE Jerusalem College of Engineering
+Feb 23, 2025
+OBJECTIVE
+<number>
+Department of CSE
+Je
+2025-03-12 20:00:47,027 - Embedded object detected in uploads/B_6_R_2.pptx
+2025-03-12 20:00:47,027 - Moved B_6_R_2.pptx to trash due to suspicious content.
+2025-03-12 20:00:47,058 - Extracted content from uploads/B_6_V_3.pptx: JCS1832 PROJECT WORK PHASE - IIPERCEIVING AND PREVENTING ATTACKS IN CLOUD ENVIRONMENTVIVA VOCEDate: 24-02-2025 BATCH NO: 06
+PRESENTED BY
+PRIYA DHARSHINI A(130721104061)
+RAJESHWARI B(130721104067)
+SADHANA N(130721104072)
+SUPERVISED  BY 
+Mrs. P. MAHALAKSHMI
+ASSISTANT PROFESSOR(CSE)
+JERUSALEM COLLEGE OF ENGINEERING, CHENNAI-100
+
+         DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+<number>
+Department of CSE Jerusalem College of Engineering
+Feb 23, 2025
+OBJECTIVE
+<number>
+Department of CSE
+Je
+2025-03-12 20:00:47,101 - Embedded object detected in uploads/B_6_V_3.pptx
+2025-03-12 20:00:47,101 - Moved B_6_V_3.pptx to trash due to suspicious content.
+2025-03-12 20:00:47,104 - Extracted content from uploads/test/test/2.xss: <script>alert('Hacked!');</script>
+
+2025-03-12 20:00:47,107 - Extracted content from uploads/test/test/5.txt: password_list.txt
+admin123
+qwerty
+
+2025-03-12 20:00:47,110 - Extracted content from uploads/test/test/2 (copy).yaml: <script>alert('Hacked!');</script>
+
+2025-03-12 20:00:47,113 - Extracted content from uploads/new_test/new_test/test_brute_force.txt: hello bro
+this script is for hacking sql attack and brute force attacks.
+2025-03-12 20:00:47,122 - Extracted content from uploads/new_test/new_test/HELLO.txt: hello bro
+this script is for hacking sql attack and brute force attacks.
+2025-03-12 20:01:03,670 - 127.0.0.1 - - [12/Mar/2025 20:01:03] "GET / HTTP/1.1" 200 -
+2025-03-12 20:01:04,521 - 127.0.0.1 - - [12/Mar/2025 20:01:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-12 20:01:07,166 - 127.0.0.1 - - [12/Mar/2025 20:01:07] "GET / HTTP/1.1" 200 -
+2025-03-12 20:01:08,137 - 127.0.0.1 - - [12/Mar/2025 20:01:08] "GET / HTTP/1.1" 200 -
+2025-03-12 20:01:11,114 - 127.0.0.1 - - [12/Mar/2025 20:01:11] "[32mGET /delete/1 HTTP/1.1[0m" 302 -
+2025-03-12 20:01:11,119 - 127.0.0.1 - - [12/Mar/2025 20:01:11] "GET / HTTP/1.1" 200 -
+2025-03-12 20:01:12,325 - 127.0.0.1 - - [12/Mar/2025 20:01:12] "[32mGET /delete/2 HTTP/1.1[0m" 302 -
+2025-03-12 20:01:12,331 - 127.0.0.1 - - [12/Mar/2025 20:01:12] "GET / HTTP/1.1" 200 -
+2025-03-12 20:02:11,259 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-12 20:02:11,259 - [33mPress CTRL+C to quit[0m
+2025-03-12 20:02:17,732 - 127.0.0.1 - - [12/Mar/2025 20:02:17] "GET / HTTP/1.1" 200 -
