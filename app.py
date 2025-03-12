@@ -442,4 +442,4 @@ def delete_file(file_id):
 if __name__ == '__main__':
     os.environ["FLASK_RUN_FROM_CLI"] = "false"  
     scan_directory(app.config['UPLOAD_FOLDER'])
-    app.run(debug=False)
+    app.run(debug=False,host='0.0.0.0')
