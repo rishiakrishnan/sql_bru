@@ -32509,3 +32509,48 @@ this script is for hacking sql attack and brute force attacks.
 2025-03-14 16:04:25,626 - [33mPress CTRL+C to quit[0m
 2025-03-14 16:04:37,054 - 127.0.0.1 - - [14/Mar/2025 16:04:37] "GET / HTTP/1.1" 200 -
 2025-03-14 16:04:37,352 - 127.0.0.1 - - [14/Mar/2025 16:04:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-14 16:21:30,822 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-14 16:21:30,822 - [33mPress CTRL+C to quit[0m
+2025-03-14 16:21:39,136 - 127.0.0.1 - - [14/Mar/2025 16:21:39] "GET / HTTP/1.1" 200 -
+2025-03-14 16:21:39,379 - 127.0.0.1 - - [14/Mar/2025 16:21:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-14 16:21:55,618 - Extracted content from uploads/attendancephp.txt: index.php:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <style>
+   body {
+  background-size: 100% 100%;
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-08.jpg');
+  background-repeat: no-repeat;
+}
+ 
+</style>
+<body>
+   
+2025-03-14 16:21:55,618 - Malicious pattern detected in uploads/attendancephp.txt
+2025-03-14 16:21:55,620 - 127.0.0.1 - - [14/Mar/2025 16:21:55] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-14 16:21:55,624 - 127.0.0.1 - - [14/Mar/2025 16:21:55] "GET / HTTP/1.1" 200 -
+2025-03-14 16:22:04,820 - Extracted content from uploads/requirements.txt: Flask
+python-docx
+python-pptx
+openpyxl
+cloudmersive-virus-api-client
+opencv-python
+numpy
+
+#pip install -r requirements.txt
+
+#sudo apt install python3-pip python3-venv -y
+2025-03-14 16:22:04,830 - 127.0.0.1 - - [14/Mar/2025 16:22:04] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-14 16:22:04,834 - 127.0.0.1 - - [14/Mar/2025 16:22:04] "GET / HTTP/1.1" 200 -
+2025-03-14 16:22:16,563 - 127.0.0.1 - - [14/Mar/2025 16:22:16] "[32mPOST /upload-folder HTTP/1.1[0m" 302 -
+2025-03-14 16:22:16,568 - 127.0.0.1 - - [14/Mar/2025 16:22:16] "GET / HTTP/1.1" 200 -
+2025-03-14 16:22:19,797 - 127.0.0.1 - - [14/Mar/2025 16:22:19] "[32mGET /delete/1 HTTP/1.1[0m" 302 -
+2025-03-14 16:22:19,802 - 127.0.0.1 - - [14/Mar/2025 16:22:19] "GET / HTTP/1.1" 200 -
